@@ -33,6 +33,7 @@ struct Blog: Website {
     var socialMediaLinks: [SocialMediaLink] { [.location, .email, .linkedIn, .github, .twitter] }
 }
 
+
 // This will generate your website using the built-in Foundation theme:
 
 try Blog().publish(
