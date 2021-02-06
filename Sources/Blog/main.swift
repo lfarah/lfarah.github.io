@@ -31,6 +31,7 @@ struct Blog: Website {
     var language: Language { .english }
     var imagePath: Path? { nil }    
     var socialMediaLinks: [SocialMediaLink] { [.location, .email, .linkedIn, .github, .twitter] }
+    
 }
 
 
