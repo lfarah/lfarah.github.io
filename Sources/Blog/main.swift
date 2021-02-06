@@ -38,6 +38,8 @@ struct Blog: Website {
 
 try Blog().publish(
     withTheme: .blog,
-    additionalSteps: [.deploy(using: .gitHub("lfarah/lfarah.github.io"))],
+    additionalSteps: [
+        .deploy(using: .gitHub("lfarah/lfarah.github.io", useSSH: false))
+    ],
     plugins: [.splash(withClassPrefix: "")]
 )
