@@ -14,7 +14,7 @@ depends-top-level:
 - "=="
 - "Array"
 - "Blog"
-- !private "BooleanLiteralType"
+- "BooleanLiteralType"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "Language"
@@ -271,7 +271,7 @@ depends-member:
 - ["7Publish16WebsiteSectionIDP", "init"]
 - ["7Publish16WebsiteSectionIDP", "rawValue"]
 - ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -322,7 +322,7 @@ depends-nominal:
 - "7Publish7WebsiteP"
 - "7Publish16WebsiteSectionIDP"
 - "s30_CustomPlaygroundQuickLookableP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
@@ -386,4 +386,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c55c1b0f8487bfb4e1ff77085f6ae85e"
+interface-hash: "81ea78de645ac58f4f247265010f8208"
