@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content"><channel><title>Lucas Farah's Blog</title><description>Helping myself become a better developer</description><link>https://lfarah.github.io/blog/</link><language>en</language><lastBuildDate>Sat, 6 Feb 2021 15:34:16 -0300</lastBuildDate><pubDate>Sat, 6 Feb 2021 15:34:16 -0300</pubDate><ttl>250</ttl><atom:link href="https://lfarah.github.io/blog/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://lfarah.github.io/blog/articles/custom-swiftlint-rules</guid><title>Using custom Swiftlint rules</title><description>Enforcing code style</description><link>https://lfarah.github.io/blog/articles/custom-swiftlint-rules</link><pubDate>Sat, 6 Feb 2021 11:39:00 -0300</pubDate><content:encoded><![CDATA[<h1>Using custom Swiftlint rules</h1><p>Swiftlint is an amazing tool that help us not only write cleaner code, but also better code. Thanks to Swiftlint, I once got a job because my code was clean. Thanks to Swiftlint, I learned that delegates should be class protocols and weak.</p><h3>Enforcing Extensions</h3><p>Extensions are one of my favorite features of the Swift language. They are really helpful to add tricks to current classes, avoiding those huge “Utils” files we see in many projects. One problem though, when working on a team bigger than 1 developer, is to remember these extensions exist and we end up creating our own extensions or doing it in the “old”, uglier way. Let’s take for example my favorite extensions:</p><pre><code><span class="keyword">extension</span> <span class="type">UITableViewCell</span> {
+    
+    <span class="keyword">static var</span> reuseIdentifier: <span class="type">String</span> {
+        <span class="keyword">return</span> <span class="type">NSStringFromClass</span>(<span class="keyword">self</span>)
+    }
+}
+
+<span class="keyword">extension</span> <span class="type">UITableView</span> {
+    
+    <span class="keyword">public func</span> register&lt;T: <span class="type">UITableViewCell</span>&gt;(type: <span class="type">T</span>.<span class="type">Type</span>) {
+        <span class="call">register</span>(type, forCellReuseIdentifier: type.<span class="property">reuseIdentifier</span>)
+    }
+    
+    <span class="keyword">public func</span> dequeue&lt;T: <span class="type">UITableViewCell</span>&gt;(type: <span class="type">T</span>.<span class="type">Type</span>, indexPath: <span class="type">IndexPath</span>) -&gt; <span class="type">T</span> {
+        <span class="keyword">guard let</span> cell = <span class="call">dequeueReusableCell</span>(withIdentifier: type.<span class="property">reuseIdentifier</span>, for: indexPath) <span class="keyword">as</span>? <span class="type">T</span> <span class="keyword">else</span> {
+            <span class="call">fatalError</span>(<span class="string">"Cell not registered:</span> \(<span class="type">T</span>.<span class="keyword">self</span>)<span class="string">"</span>)
+        }
+        <span class="keyword">return</span> cell
+    }
+}
+</code></pre><p>Thanks to this extension and the power of generics, we can reduce a lot of boilerplate:</p><pre><code><span class="comment">// Old</span>
+
+<span class="keyword">override func</span> viewDidLoad() {
+    <span class="keyword">super</span>.<span class="call">viewDidLoad</span>()
+    tableView.<span class="call">register</span>(<span class="type">NameCell</span>.<span class="keyword">self</span>, forCellReuseIdentifier: <span class="string">"NameCell"</span>)
+}
+
+<span class="keyword">func</span> tableView(<span class="keyword">_</span> tableView: <span class="type">UITableView</span>, cellForRowAt indexPath: <span class="type">IndexPath</span>) -&gt; <span class="type">UITableViewCell</span> {
+    <span class="keyword">guard let</span> cell = tableView.<span class="call">dequeueReusableCell</span>(withIdentifier: <span class="string">"NameCell"</span>, for: indexPath) <span class="keyword">as</span>? <span class="type">NameCell</span> <span class="keyword">else</span> {
+        <span class="call">fatalError</span>(<span class="string">"Name cell not registered"</span>)
+    }
+    cell.<span class="property">name</span> = <span class="string">""</span>
+    
+    <span class="keyword">return</span> cell
+}
+</code></pre><pre><code><span class="comment">// New</span>
+<span class="keyword">override func</span> viewDidLoad() {
+    <span class="keyword">super</span>.<span class="call">viewDidLoad</span>()
+    tableView.<span class="call">register</span>(type: <span class="type">NameCell</span>.<span class="keyword">self</span>)
+}
+
+<span class="keyword">func</span> tableView(<span class="keyword">_</span> tableView: <span class="type">UITableView</span>, cellForRowAt indexPath: <span class="type">IndexPath</span>) -&gt; <span class="type">UITableViewCell</span> {
+    <span class="keyword">let</span> cell = tableView.<span class="call">dequeue</span>(type: <span class="type">NameCell</span>.<span class="keyword">self</span>, indexPath: indexPath)
+    cell.<span class="property">name</span> = <span class="string">""</span>
+    <span class="keyword">return</span> cell
+}
+</code></pre><p>One problem though, is that the new developer that just arrived in my team doesn’t know about these extensions, so there’s a great chance that the developer will open a PR using the regular methods instead of our shiny extension.</p><h5>Custom lint rules to the rescue!</h5><p>We can create a rule that detects when the developer is using the regular method and presents a warning teaching the dev about our amazing extension. Swiftlint rules are all based on Regex, so I’ve been using [Regex website] to help me out while writing our regex.</p><pre><code><span class="comment">// .swiftlint.yml</span>
+custom_rules:
+  tableview_register_extension:
+    included: <span class="string">".*\\.swift"</span>
+    excluded: <span class="string">".*\\Extensions.swift"</span>
+    name: <span class="string">"TableView Register Extension"</span>
+    regex: <span class="string">"(register).*(forCellReuseIdentifier)"</span>
+    message: <span class="string">"Please use our extension instead: tableView.register(type: CellClass.self)"</span>
+    severity: warning
+    
+  tableview_dequeue_extension:\
+    included: <span class="string">".*\\.swift"</span>
+    excluded: <span class="string">".*\\Extensions.swift"</span>\
+    name: <span class="string">"TableView Dequeue Extension"</span>
+    regex: <span class="string">"(dequeueReusableCell\</span>\(withIdentifier)<span class="string">"</span>
+    message: <span class="string">"Please use our extension instead: dequeue(type: CellClass.self, indexPath: indexPath)"</span>
+    severity: warning
+</code></pre><img src="https://lfarah.github.io/blog//images/custom-swiftlint-rules/table-register-warning.png" alt="Table Register Warning" width="800"/><img src="https://lfarah.github.io/blog//images/custom-swiftlint-rules/table-dequeue-warning.png" alt="Table Dequeue Warning" width="800"/><h3>Enforcing a design pattern</h3><p>At one of my previous companies, we were using MVVM + Repository with a separate framework for the API. So one idea we had to enforce our design pattern was to only allow the Repository classes to import API.</p><pre><code>api_outside_repository:
+  included: <span class="string">".*\\.swift"</span>
+  excluded: <span class="string">".*\\Repository.swift"</span>
+  name: <span class="string">"Import API outside Repository"</span>
+  regex: <span class="string">"(import API)"</span>
+  message: <span class="string">"Only Repository classes can import API"</span>
+  severity: warning
+</code></pre><p>Another of our projects used Coordinators, so we created another rule to enforce that no ViewController was presenting another ViewController</p><pre><code>
+
+present_outside_coordinator:
+  included: <span class="string">".*\\.swift"</span>
+  excluded: <span class="string">".*\\Coordinator.swift"</span>
+  name: <span class="string">"Use present outside Coordinator"</span>
+  regex: <span class="string">"(present).*(animated)"</span>
+  message: <span class="string">"Only Coordinators can present ViewControllers"</span>
+  severity: warning
+</code></pre><h3>Magic number in constraints</h3><p>Views can become quite complex, so organizing our constraints was also really important for our team. We created a rule to avoid magic numbers in constraints, asking the dev to use a constant that was defined somewhere else in the code.</p><pre><code><span class="comment">// Lint rule</span> 
+</code></pre><h3>Conclusion</h3><p>These are some examples, but sky is the limit. The important thing when introducing these rules is to discuss with your team. Swiftlint should be your helper, not a dictator.</p>]]></content:encoded></item></channel></rss>

@@ -1,0 +1,26 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftTargetMap" : {
+    "C.Blog-debug.module" : "Blog",
+    "C.Codextended-debug.module" : "Codextended",
+    "C.Files-debug.module" : "Files",
+    "C.Ink-debug.module" : "Ink",
+    "C.InkCLI-debug.module" : "InkCLI",
+    "C.Plot-debug.module" : "Plot",
+    "C.Publish-debug.module" : "Publish",
+    "C.PublishCLI-debug.module" : "PublishCLI",
+    "C.PublishCLICore-debug.module" : "PublishCLICore",
+    "C.ShellOut-debug.module" : "ShellOut",
+    "C.Splash-debug.module" : "Splash",
+    "C.SplashPublishPlugin-debug.module" : "SplashPublishPlugin",
+    "C.Sweep-debug.module" : "Sweep"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

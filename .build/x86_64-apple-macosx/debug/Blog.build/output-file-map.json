@@ -1,0 +1,107 @@
+{
+  "": {
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/master.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/BlogDateFormatter.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/BlogDateFormatter.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/BlogDateFormatter.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/BlogDateFormatter~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/BlogDateFormatter.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/BlogHTMLFactory.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/BlogHTMLFactory.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/BlogHTMLFactory.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/BlogHTMLFactory~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/BlogHTMLFactory.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Footer.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Footer.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Footer.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Footer~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Footer.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Grid.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Grid.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Grid.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Grid~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Grid.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Head.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Head.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Head.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Head~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Head.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Header.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Header.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Header.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Header~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Header.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Icon.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Icon.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Icon.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Icon~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Icon.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Page.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Page.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Page.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Page~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Page.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+PageContent.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+PageContent.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+PageContent.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+PageContent~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+PageContent.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Post.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Post.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Post.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Post~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Post.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+PostExcerpt.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+PostExcerpt.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+PostExcerpt.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+PostExcerpt~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+PostExcerpt.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Posts.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Posts.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Posts.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Posts~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Posts.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Sidebar.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Sidebar.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Sidebar.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Sidebar~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+Sidebar.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+TagList.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+TagList.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+TagList.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+TagList~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Nodes/Node+TagList.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Theme+Blog.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Theme+Blog.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Theme+Blog.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Theme+Blog~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/BlogTheme/Theme+Blog.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/SocialMediaLink.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/SocialMediaLink.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/SocialMediaLink.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/SocialMediaLink~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/SocialMediaLink.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/main.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/main.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/main.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/Blog.build/main.swiftdeps"
+  }
+}

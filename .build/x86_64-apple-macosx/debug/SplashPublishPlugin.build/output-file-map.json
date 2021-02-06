@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/SplashPublishPlugin.build/master.swiftdeps"
+  },
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/checkouts/splashpublishplugin/Sources/SplashPublishPlugin/SplashPublishPlugin.swift": {
+    "dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/SplashPublishPlugin.build/SplashPublishPlugin.d",
+    "object": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/SplashPublishPlugin.build/SplashPublishPlugin.swift.o",
+    "swiftmodule": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/SplashPublishPlugin.build/SplashPublishPlugin~partial.swiftmodule",
+    "swift-dependencies": "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/SplashPublishPlugin.build/SplashPublishPlugin.swiftdeps"
+  }
+}

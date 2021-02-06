@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "1da993bc2b09310eb356a65af9f04ff8"
+build_time: [1612636482, 783642000]
+inputs:
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/checkouts/sweep/Sources/Sweep/Sweep.swift": [1612636477, 119833440]

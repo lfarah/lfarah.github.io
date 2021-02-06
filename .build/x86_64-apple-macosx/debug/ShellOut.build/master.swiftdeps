@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "dfda59c2781ffd4bf5c9df90cdc50c13"
+build_time: [1612636482, 790828000]
+inputs:
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/checkouts/shellout/Sources/ShellOut.swift": [1612636478, 578008358]

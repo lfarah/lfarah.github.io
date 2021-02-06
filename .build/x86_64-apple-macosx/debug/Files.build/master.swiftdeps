@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "0451dff8525f21e37bee54aa8666d5d5"
+build_time: [1612636482, 783210000]
+inputs:
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/checkouts/files/Sources/Files.swift": [1612636477, 710126395]

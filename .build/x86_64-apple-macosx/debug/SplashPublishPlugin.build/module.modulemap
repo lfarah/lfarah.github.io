@@ -1,0 +1,4 @@
+module SplashPublishPlugin {
+    header "/Users/lucasfarah/Documents/lucasfarah.github.io/.build/x86_64-apple-macosx/debug/SplashPublishPlugin.build/SplashPublishPlugin-Swift.h"
+    requires objc
+}

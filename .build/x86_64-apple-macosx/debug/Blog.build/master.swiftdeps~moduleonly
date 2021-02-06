@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "ca32f6696825f774f96832388a34b506"
+build_time: [1612636513, 581863000]
+inputs:
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/BlogDateFormatter.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/BlogHTMLFactory.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Footer.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Grid.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Head.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Header.swift": [1612624047, 419909231]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Icon.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Page.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+PageContent.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Post.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+PostExcerpt.swift": [1612624102, 200497432]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Posts.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+Sidebar.swift": [1612624998, 856489538]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Nodes/Node+TagList.swift": [1592920069, 0]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/BlogTheme/Theme+Blog.swift": [1612625063, 945602550]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/SocialMediaLink.swift": [1612624857, 803911058]
+  "/Users/lucasfarah/Documents/lucasfarah.github.io/Sources/Blog/main.swift": [1612636165, 45265723]
