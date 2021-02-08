@@ -6,12 +6,12 @@
 		<link rel="canonical" href="http://www.lucasfarah.dev/articles/custom-swiftlint-rules"/>
 		<meta name="twitter:url" content="http://www.lucasfarah.dev/articles/custom-swiftlint-rules"/>
 		<meta name="og:url" content="http://www.lucasfarah.dev/articles/custom-swiftlint-rules"/>
-		<title>Using custom Swiftlint rules | Lucas Farah's Blogs</title>
-		<meta name="twitter:title" content="Using custom Swiftlint rules | Lucas Farah's Blogs"/>
-		<meta name="og:title" content="Using custom Swiftlint rules | Lucas Farah's Blogs"/>
-		<meta name="description" content="Enforcing code style"/>
-		<meta name="twitter:description" content="Enforcing code style"/>
-		<meta name="og:description" content="Enforcing code style"/>
+		<title>Teaching your team about code style by using custom SwiftLint rules | Lucas Farah's Blogs</title>
+		<meta name="twitter:title" content="Teaching your team about code style by using custom SwiftLint rules | Lucas Farah's Blogs"/>
+		<meta name="og:title" content="Teaching your team about code style by using custom SwiftLint rules | Lucas Farah's Blogs"/>
+		<meta name="description" content="Let’s talk about some examples that show the power of custom SwiftLint rules which can help your team to follow the code style of your project."/>
+		<meta name="twitter:description" content="Let’s talk about some examples that show the power of custom SwiftLint rules which can help your team to follow the code style of your project."/>
+		<meta name="og:description" content="Let’s talk about some examples that show the power of custom SwiftLint rules which can help your team to follow the code style of your project."/>
 		<meta name="twitter:card" content="summary"/>
 		<link rel="stylesheet" href="/styles.css" type="text/css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -42,7 +42,7 @@
 		</header>
 		<div class="wrapper">
 			<article>
-				<div class="content"><h1>Using custom Swiftlint rules</h1><p>Swiftlint is an amazing tool that help us not only write cleaner code, but also better code. Thanks to Swiftlint, I once got a job because my code was clean. Thanks to Swiftlint, I learned that delegates should be class protocols and weak.</p><h3>Enforcing Extensions</h3><p>Extensions are one of my favorite features of the Swift language. They are really helpful to add tricks to current classes, avoiding those huge “Utils” files we see in many projects. One problem though, when working on a team bigger than 1 developer, is to remember these extensions exist and we end up creating our own extensions or doing it in the “old”, uglier way. Let’s take for example my favorite extensions:</p><pre><code><span class="keyword">extension</span> <span class="type">UITableViewCell</span> {
+				<div class="content"><h1>Teaching your team about code style by using custom SwiftLint rules</h1><p>Swiftlint is an amazing tool that help us not only write cleaner code, but also better code. Thanks to Swiftlint, I once got a job because my code was clean. This amazing tool comes with a lot of rules, but I think we still have to master it’s hidden power: custom rules. As we stay longer in the same project, we can pretty much automatically follow the code style, but what happens when someone new comes up? Of course you will spend a significant amount of time with this new developer showing the code and how the information flows through the app, but no matter how good you do your job, there will be some smaller issues with as the first PRs of this new developer are open. It is our job to teach this person that this code indeed works, but it is not following some code style, or not calling some special method. This, even though this is educational, it can be frustrating for someone who just arrived in the company.</p><h5>So how do we solve this?</h5><p>We solve this by creating as many custom SwiftLint rules as possible, so as the new developer is writing their code, Xcode can show warnings and point it to the right direction. I believe that in this way, this person is learning on their own, and will likely get their PR approved way faster.</p><h3>Enforcing Extensions</h3><blockquote><p>Hey, please use the xyz new extension insteadExtensions are one of my favorite features of the Swift language. They are really helpful to add tricks to current classes, avoiding those huge “Utils” files we see in many projects.One problem though, when working on a team bigger than 1 developer, is to remember these extensions exist and we end up creating our own extensions or doing it in the “old”, uglier way.Let’s take for example my favorite extensions:</p></blockquote><pre><code><span class="keyword">extension</span> <span class="type">UITableViewCell</span> {
     
     <span class="keyword">static var</span> reuseIdentifier: <span class="type">String</span> {
         <span class="keyword">return</span> <span class="type">NSStringFromClass</span>(<span class="keyword">self</span>)
