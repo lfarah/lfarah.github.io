@@ -13,6 +13,7 @@ import SplashPublishPlugin
  }
 
  */
+
 struct Blog: Website {
     enum SectionID: String, WebsiteSectionID {
         case articles
@@ -26,8 +27,8 @@ struct Blog: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://lfarah.github.io/blog/")!
-    var name = "Lucas Farah's Blog"
+    var url = URL(string: "https://lucasfarah.dev")!
+    var name = "Lucas Farah"
     var description = "Helping myself become a better developer"
     var language: Language { .english }
     var imagePath: Path? { nil }    
