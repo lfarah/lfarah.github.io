@@ -41,6 +41,8 @@ struct Blog: Website {
 try Blog().publish(
     withTheme: .blog,
     additionalSteps: [
+        .addMarkdownFiles(),
+        .generateSiteMap(),
         .deploy(using: .gitHub("lfarah/lfarah.github.io", useSSH: false))
     ],
     plugins: [.splash(withClassPrefix: "")]
