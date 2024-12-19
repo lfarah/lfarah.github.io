@@ -1,3 +1,8 @@
+---
+date: 2024-12-19 09:00
+description: Collino Privacy Policy
+tags: collino
+---
 **Privacy Policy**
 
 This privacy policy applies to the Collino app (hereby referred to as "Application") for mobile devices that was created by Lucas Farah Palmiro (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".
