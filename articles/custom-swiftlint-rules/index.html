@@ -1,48 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="og:site_name" content="Lucas Farah's Blogs"/>
-		<link rel="canonical" href="https://lfarah.github.io/articles/custom-swiftlint-rules"/>
-		<meta name="twitter:url" content="https://lfarah.github.io/articles/custom-swiftlint-rules"/>
-		<meta name="og:url" content="https://lfarah.github.io/articles/custom-swiftlint-rules"/>
-		<title>Teaching your team about code style by using custom SwiftLint rules | Lucas Farah's Blogs</title>
-		<meta name="twitter:title" content="Teaching your team about code style by using custom SwiftLint rules | Lucas Farah's Blogs"/>
-		<meta name="og:title" content="Teaching your team about code style by using custom SwiftLint rules | Lucas Farah's Blogs"/>
-		<meta name="description" content="Let’s talk about some examples that show the power of custom SwiftLint rules which can help your team to follow the code style of your project."/>
-		<meta name="twitter:description" content="Let’s talk about some examples that show the power of custom SwiftLint rules which can help your team to follow the code style of your project."/>
-		<meta name="og:description" content="Let’s talk about some examples that show the power of custom SwiftLint rules which can help your team to follow the code style of your project."/>
-		<meta name="twitter:card" content="summary"/>
-		<link rel="stylesheet" href="/styles.css" type="text/css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="shortcut icon" href="/images/favicon.png" type="image/png"/>
-		<link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to Lucas Farah's Blogs"/>
-	</head>
-	<body class="item-page">
-		<header>
-			<div class="wrapper">
-				<a class="site-name" href="/">
-					<img class="logo" src="/logo.png"/>
-				</a>
-				<h4>Helping myself to become a better developer</h4>
-				<nav>
-					<ul>
-						<li>
-							<a href="/">Home</a>
-						</li>
-						<li class="selected">
-							<a href="/articles">Articles</a>
-						</li>
-						<li>
-							<a href="/#aboutMeAnchor">About</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<div class="wrapper">
-			<article>
-				<div class="content"><h1>Teaching your team about code style by using custom SwiftLint rules</h1><p>Swiftlint is an amazing tool that help us not only write cleaner code, but also better code. Thanks to Swiftlint, I once got a job because my code was clean. This amazing tool comes with a lot of rules, but I think we still have to master it’s hidden power: custom rules. As we stay longer in the same project, we can pretty much automatically follow the code style, but what happens when someone new comes up? Of course you will spend a significant amount of time with this new developer showing the code and how the information flows through the app, but no matter how good you do your job, there will be some smaller issues with as the first PRs of this new developer are open. It is our job to teach this person that this code indeed works, but it is not following some code style, or not calling some special method. This, even though this is educational, it can be frustrating for someone who just arrived in the company.</p><h5>So how do we solve this?</h5><p>We solve this by creating as many custom SwiftLint rules as possible, so as the new developer is writing their code, Xcode can show warnings and point it to the right direction. I believe that in this way, this person is learning on their own, and will likely get their PR approved way faster.</p><h3>Enforcing Extensions</h3><blockquote><p>Hey, please use the xyz new extension insteadExtensions are one of my favorite features of the Swift language. They are really helpful to add tricks to current classes, avoiding those huge “Utils” files we see in many projects.One problem though, when working on a team bigger than 1 developer, is to remember these extensions exist and we end up creating our own extensions or doing it in the “old”, uglier way.Let’s take for example my favorite extensions:</p></blockquote><pre><code><span class="keyword">extension</span> <span class="type">UITableViewCell</span> {
+<!DOCTYPE html><html lang="en"><head><title>Lucas Farah's Blog - Helping myself become a better developer</title><meta name="twitter:title" content="Lucas Farah's Blog - Helping myself become a better developer"/><meta property="og:title" content="Lucas Farah's Blog - Helping myself become a better developer"/><meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"/><link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css"/><link rel="stylesheet" href="/Pure/styles.css"/><link rel="stylesheet" href="/all.css"/></head><body><div id="layout" class="pure-g"><div><div class="pure-menu pure-menu-horizontal pure-u-1-1 top-header"><a class="pure-menu-heading" href="/">Lucas Farah's Blog</a><ul class="pure-menu-list"><li class="pure-menu-item"><a class="pure-menu-link" href="/about">About</a></li></ul></div></div><div class="sidebar pure-u-1 pure-u-md-1-4"><div class="header"><div id="layout" class="pure-g"><div class="author__avatar"><img src="https://avatars.githubusercontent.com/u/6511079?s=460&u=8c7104e93f8f45b1a397fb7f781dbe41ae6c82c5&v=4"/></div><div class="pure-u-md-1-1 pure-u-3-4"><h1 class="brand-title">Lucas Farah's Blog</h1><h3 class="brand-tagline">Helping myself become a better developer</h3></div></div><div id="layout" class="pure-g"><div class="pure-u-md-1-1"><a><i class="fas fa-map-marker-alt l-box social-icon"></i><a class="social-media">São Paulo, Brazil</a></a></div><div class="pure-u-md-1-1"><a href="mailto:hi@lucasfarah.dev"><i class="fas fa-envelope-open-text l-box social-icon"></i><a class="social-media" href="mailto:hi@lucasfarah.dev">Email</a></a></div><div class="pure-u-md-1-1"><a href="https://www.linkedin.com/in/lucasfarah"><i class="fab fa-linkedin l-box social-icon"></i><a class="social-media" href="https://www.linkedin.com/in/lucasfarah">LinkedIn</a></a></div><div class="pure-u-md-1-1"><a href="https://github.com/lfarah7"><i class="fab fa-github-square l-box social-icon"></i><a class="social-media" href="https://github.com/lfarah7">GitHub</a></a></div><div class="pure-u-md-1-1"><a href="https://twitter.com/7farah7"><i class="fab fa-twitter-square l-box social-icon"></i><a class="social-media" href="https://twitter.com/7farah7">Twitter</a></a></div></div></div></div><div class="content pure-u-1 pure-u-md-3-5 pure-u-xl-6-10"><h2 class="post-title"><a href="/articles/custom-swiftlint-rules">Using custom Swiftlint rules</a></h2><p class="post-meta">6 February 2021</p><div class="post-tags"><a class="post-category post-category-swiftlint" href="/tags/swiftlint">swiftlint</a></div><div class="post-description"><div><h1>Using custom Swiftlint rules</h1><p>Swiftlint is an amazing tool that help us not only write cleaner code, but also better code. Thanks to Swiftlint, I once got a job because my code was clean. Thanks to Swiftlint, I learned that delegates should be class protocols and weak.</p><h3>Enforcing Extensions</h3><p>Extensions are one of my favorite features of the Swift language. They are really helpful to add tricks to current classes, avoiding those huge “Utils” files we see in many projects. One problem though, when working on a team bigger than 1 developer, is to remember these extensions exist and we end up creating our own extensions or doing it in the “old”, uglier way. Let’s take for example my favorite extensions:</p><pre><code><span class="keyword">extension</span> <span class="type">UITableViewCell</span> {
     
     <span class="keyword">static var</span> reuseIdentifier: <span class="type">String</span> {
         <span class="keyword">return</span> <span class="type">NSStringFromClass</span>(<span class="keyword">self</span>)
@@ -122,30 +78,4 @@ present_outside_coordinator:
   message: <span class="string">"Only Coordinators can present ViewControllers"</span>
   severity: warning
 </code></pre><h3>Magic number in constraints</h3><p>Views can become quite complex, so organizing our constraints was also really important for our team. We created a rule to avoid magic numbers in constraints, asking the dev to use a constant that was defined somewhere else in the code.</p><pre><code><span class="comment">// Lint rule</span> 
-</code></pre><h3>Conclusion</h3><p>These are some examples, but sky is the limit. The important thing when introducing these rules is to discuss with your team. Swiftlint should be your helper, not a dictator.</p></div>
-				<br/>
-				<br/>
-				<p>Published on 2021-02-06 14:39:00 +0000</p>
-				<span>Tagged with: </span>
-				<ul class="tag-list">
-					<li>
-						<a href="/tags/swiftlint">swiftlint</a>
-					</li>
-				</ul>
-			</article>
-		</div>
-		<footer>
-			<p>Written in Swift. Made with 
-				<a href="https://github.com/johnsundell/ink">Ink</a>, 
-				<a href="https://github.com/johnsundell/plot">Plot</a>, 
-				<a href="https://github.com/johnsundell/splash">Splash</a>, 
-				<a href="https://github.com/johnsundell/publish">Publish</a> &amp; 
-				<a href="https://github.com/leontedev/Publish-leonte.dev">Theme+Leontedev</a>
-			</p>
-			<p>©2021 Lucas Farah</p>
-			<p>
-				<a class="rss" href="/feed.rss">RSS</a>
-			</p>
-		</footer>
-	</body>
-</html>
+</code></pre><h3>Conclusion</h3><p>These are some examples, but sky is the limit. The important thing when introducing these rules is to discuss with your team. Swiftlint should be your helper, not a dictator.</p></div></div></div><div class="footer pure-u-1"><div class="pure-u-1">© 2024 Lucas Farah's Blog</div><div class="pure-u-1">Generated using <a href="https://github.com/johnsundell/publish">Publish</a>. Written in Swift</div><div class="pure-u-1"><a href="/feed.rss">RSS feed</a></div></div></div></body></html>
